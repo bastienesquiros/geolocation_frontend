@@ -1,15 +1,14 @@
 import styles from '../styles/Home.module.css';
+import Location from './Location';
+import Redirect from './Redirect';
 
 function Home() {
-  return (
-    <div>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-      </main>
-    </div>
-  );
+	return (
+		<div className={styles.main}>
+			<Location />
+			<Redirect />
+		</div>
+	);
 }
 
 export default Home;
