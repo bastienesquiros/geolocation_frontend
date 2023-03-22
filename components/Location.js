@@ -9,7 +9,7 @@ export default function Location() {
 				const data = await response.json();
 				const cityData = data.city;
 
-				fetch('http://localhost:3000/users/save', {
+				fetch('https://geolocation-backend.vercel.app/users/save', {
 					method: 'POST',
 					headers: { 'Content-Type': 'application/json' },
 					body: JSON.stringify({
